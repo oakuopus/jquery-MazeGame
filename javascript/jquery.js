@@ -221,6 +221,26 @@ $(document).ready(function() {
         {top:300, left:240},
         {top:320, left:280},
         {top:300, left:320},
+        {top:300, left:20},
+        {top:320, left:20},
+        {top:340, left:20},
+        {top:280, left:20},
+        {top:360, left:20},
+        {top:280, left:40},
+        {top:280, left:60},
+        {top:240, left:20},
+        {top:280, left:80},
+        {top:260, left:80},
+        {top:320, left:80},
+        {top:320, left:60},
+        {top:320, left:100},
+        {top:320, left:120},
+        {top:320, left:140},
+        {top:360, left:80},
+        {top:360, left:100},
+        {top:360, left:60},
+        {top:360, left:40},
+        {top:360, left:120},
     ]
 
     for (var i = 0; i < wallCoordinates.length; i++) {
@@ -233,4 +253,7 @@ $(document).ready(function() {
     $("#start").css({
         backgroundcolor: "white",
     })
+
+    var start = new Date; setInterval(function() { $('.Timer').text((new Date - start) / 1000 + " Seconds"); }, 1000);
+    console.log(start)
 })
